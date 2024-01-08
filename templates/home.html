@@ -8,21 +8,20 @@
 
 <form action="{{url_for('predict_datapoint')}}" method="post">
     
-    <input type="text" name="Temperature" placeholder="Temperature" required="required" /> <br>
-    <input type="text" name="RH" placeholder="RH" required="required" /> <br>
-    <input type="text" name="Ws" placeholder="Ws" required="required" /> <br>
-    <input type="text" name="Rain" placeholder="Rain" required="required" /> <br>
-    <input type="text" name="FFMC" placeholder="FFMC" required="required" /> <br>
-    <input type="text" name="DMC" placeholder="DMC" required="required" /> <br>
-    <input type="text" name="ISI" placeholder="ISI" required="required" /> <br>
-    <input type="text" name="Classes" placeholder="Classes" required="required" /> <br>
-    <input type="text" name="Region" placeholder="Region" required="required" /> <br>
+    <input type="text" name="Pregnancies" placeholder="Pregnancies" required="required" /> <br>
+    <input type="text" name="Glucose" placeholder="Glucose" required="required" /> <br>
+    <input type="text" name="BloodPressure" placeholder="BloodPressure" required="required" /> <br>
+    <input type="text" name="SkinThickness" placeholder="SkinThickness" required="required" /> <br>
+    <input type="text" name="Insulin" placeholder="Insulin" required="required" /> <br>
+    <input type="text" name="BMI" placeholder="BMI" required="required" /> <br>
+    <input type="text" name="DiabetesPedigreeFunction" placeholder="DiabetesPedigreeFunction" required="required" /> <br>
+    <input type="text" name="Age" placeholder="Age" required="required" /> <br>
 
     <button type="submit" class="btn btn-primary btn-block btn-large"> Predict </button>
 </form>
 
 
-<h2> FWI Prediction is {{result}}</h2>
+<h2> If Patient is Diabetic or Not Prediction is {{result}}</h2>
 
 
 </body>
